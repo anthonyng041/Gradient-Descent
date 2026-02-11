@@ -1,7 +1,7 @@
 let agents = [];
 let numAgents = 30;
 let noiseScale = 0.005; // Controls the "zoom" of the terrain
-let learningRate = 15; // How big of a step the agents take
+let learningRate = 50; // How big of a step the agents take
 let terrainGraphics;
 
 function setup() {
@@ -20,7 +20,6 @@ function setup() {
 }
 
 function draw() {
-  // We do NOT clear the background. This allows trails to build up.
   // We just slightly darken the previous frame to create fading trails.
   noStroke();
   fill(0, 5);
